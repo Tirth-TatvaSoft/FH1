@@ -15,7 +15,7 @@ public class AuthController(IAuthService authservice) : ControllerBase
     {
         ServiceResult<AuthResponse> result = await _authService.Login(request);
         if (!result.Success)
-            return Unauthorized(new { message = result.Message });
+            return Unauthorized(new { message = result.Message });   
 
         return Ok(result.Data);
     }
