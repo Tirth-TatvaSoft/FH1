@@ -1,0 +1,6 @@
+@FhWebApi_HostAddress = http://localhost:5030
+
+GET {{FhWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
